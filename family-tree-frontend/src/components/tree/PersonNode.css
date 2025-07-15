@@ -1,0 +1,218 @@
+.person-node {
+  transition: all 0.3s ease;
+}
+
+.person-node:hover {
+  transform: scale(1.05);
+}
+
+.person-node.selected {
+  filter: drop-shadow(0 0 8px rgba(76, 175, 80, 0.6));
+}
+
+.person-node.highlighted {
+  filter: drop-shadow(0 0 12px rgba(255, 193, 7, 0.8));
+}
+
+.person-node.highlighted .node-circle {
+  stroke: #ffc107;
+  stroke-width: 4;
+}
+
+.person-node.highlighted text {
+  font-weight: bold;
+}
+
+/* Generation-based styling */
+.person-node.generation-0 {
+  /* Root generation - most prominent */
+  filter: drop-shadow(0 2px 8px rgba(139, 69, 19, 0.3));
+}
+
+.person-node.generation-1 {
+  /* First generation children */
+  filter: drop-shadow(0 2px 6px rgba(33, 150, 243, 0.25));
+}
+
+.person-node.generation-2 {
+  /* Second generation children */
+  filter: drop-shadow(0 1px 4px rgba(156, 39, 176, 0.2));
+}
+
+.person-node.generation-3 {
+  /* Third generation children */
+  filter: drop-shadow(0 1px 3px rgba(103, 58, 183, 0.15));
+}
+
+/* Relationship type styling */
+.person-node.root {
+  /* Root/founder styling */
+}
+
+.person-node.root .node-circle {
+  stroke-width: 4;
+}
+
+.person-node.parent {
+  /* Parent styling */
+}
+
+.person-node.child {
+  /* Child styling */
+}
+
+/* Generation indicator ring */
+.generation-ring {
+  animation: generationPulse 3s infinite;
+}
+
+@keyframes generationPulse {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.node-circle {
+  transition: all 0.3s ease;
+}
+
+.person-node:hover .node-circle {
+  filter: brightness(1.1);
+}
+
+.selection-ring {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hover-circle {
+  transition: all 0.3s ease;
+}
+
+.person-node:hover .hover-circle {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.virtual-root {
+  opacity: 0.7;
+}
+
+.virtual-root circle {
+  transition: all 0.3s ease;
+}
+
+.virtual-root:hover circle {
+  fill: #e0e0e0;
+}
+
+.add-child-button-group {
+  transition: all 0.3s ease;
+}
+
+.add-child-button-bg {
+  transition: all 0.3s ease;
+}
+
+.add-child-button-bg:hover {
+  fill: #059669;
+  transform: scale(1.1);
+}
+
+.add-child-button-group text {
+  pointer-events: none;
+}/* Root in
+dicator styling */
+.root-indicator {
+  animation: rootGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes rootGlow {
+  0% {
+    filter: drop-shadow(0 0 3px rgba(255, 215, 0, 0.6));
+  }
+  100% {
+    filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.9));
+  }
+}
+
+/* Enhanced relationship type styling */
+.person-node.root text {
+  font-weight: 600;
+}
+
+.person-node.parent text {
+  font-weight: 500;
+}
+
+.person-node.child text {
+  font-weight: 400;
+}
+
+/* Generation-specific text styling */
+.person-node.generation-0 text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.person-node.generation-1 text {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.person-node.generation-2 text {
+  font-size: 14px;
+  font-weight: 450;
+}
+
+.person-node.generation-3 text {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Enhanced hover effects for different relationship types */
+.person-node.root:hover {
+  transform: scale(1.08);
+}
+
+.person-node.parent:hover {
+  transform: scale(1.06);
+}
+
+.person-node.child:hover {
+  transform: scale(1.04);
+}
+
+/* Visual hierarchy enhancements */
+.person-node.root .node-circle {
+  stroke-width: 4;
+  filter: drop-shadow(0 3px 6px rgba(139, 69, 19, 0.4));
+}
+
+.person-node.parent .node-circle {
+  stroke-width: 3.5;
+  filter: drop-shadow(0 2px 4px rgba(33, 150, 243, 0.3));
+}
+
+.person-node.child .node-circle {
+  stroke-width: 3;
+  filter: drop-shadow(0 1px 3px rgba(156, 39, 176, 0.2));
+}
+
+/* Improved add child button positioning for dynamic radius */
+.person-node .add-child-button-group {
+  transform: translateY(20px);
+}

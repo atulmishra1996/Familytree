@@ -1,0 +1,130 @@
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.loading-spinner__circle {
+  position: relative;
+  display: inline-block;
+}
+
+.loading-spinner__inner {
+  border-radius: 50%;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  animation: spin 1s linear infinite;
+}
+
+.loading-spinner--small .loading-spinner__inner {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.loading-spinner--medium .loading-spinner__inner {
+  width: 32px;
+  height: 32px;
+  border-width: 3px;
+}
+
+.loading-spinner--large .loading-spinner__inner {
+  width: 48px;
+  height: 48px;
+  border-width: 4px;
+}
+
+.loading-spinner__message {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+/* Loading button styles */
+.loading-button {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.loading-button--loading {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.loading-button__spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-button__text--hidden {
+  opacity: 0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Pulse animation for skeleton loading */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading-skeleton {
+  background: #f0f0f0;
+  border-radius: 4px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Loading states for different components */
+.loading-card {
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.loading-card .loading-skeleton {
+  margin-bottom: 8px;
+}
+
+.loading-card .loading-skeleton:last-child {
+  margin-bottom: 0;
+}
+
+.loading-skeleton--text {
+  height: 16px;
+}
+
+.loading-skeleton--title {
+  height: 20px;
+  width: 60%;
+}
+
+.loading-skeleton--button {
+  height: 36px;
+  width: 100px;
+}

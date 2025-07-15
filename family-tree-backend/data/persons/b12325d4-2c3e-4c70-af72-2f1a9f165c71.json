@@ -1,0 +1,17 @@
+{
+  "firstName": "ABC",
+  "lastName": "Mishra",
+  "email": "atulmishra1996@gmail.com",
+  "dateOfBirth": "2025-06-30T00:00:00.000Z",
+  "placeOfBirth": "Satna",
+  "phoneNumber": "9592029280",
+  "parentIds": [
+    "5aee6f19-837d-4de4-bcc4-8b3e48376154"
+  ],
+  "notes": "Hi My Name is ABC",
+  "id": "b12325d4-2c3e-4c70-af72-2f1a9f165c71",
+  "fullName": "ABC Mishra",
+  "childrenIds": [],
+  "createdAt": "2025-07-15T21:53:35.056Z",
+  "updatedAt": "2025-07-15T21:53:35.056Z"
+}

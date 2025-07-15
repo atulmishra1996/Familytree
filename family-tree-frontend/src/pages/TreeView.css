@@ -1,0 +1,219 @@
+.tree-view {
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tree-view h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.tree-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-height: 0;
+}
+
+.selected-person-info {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+}
+
+.person-summary h3 {
+  margin: 0 0 10px 0;
+  color: #4CAF50;
+  font-size: 1.2rem;
+}
+
+.person-summary p {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.1rem;
+}
+
+.loading {
+  color: #666;
+}
+
+.error {
+  color: #f44336;
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error h2 {
+  margin-bottom: 1rem;
+  color: #f44336;
+}
+
+.error p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+}
+
+.empty-state h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 1.1rem;
+}/*
+ Responsive design for mobile and tablet */
+@media (max-width: 768px) {
+  .tree-view {
+    padding: 16px;
+    min-height: 100vh;
+  }
+
+  .tree-view h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .tree-container {
+    gap: 16px;
+  }
+
+  .selected-person-info {
+    padding: 12px;
+    margin-bottom: 60px; /* Account for fixed navigation controls */
+  }
+
+  .person-summary h3 {
+    font-size: 1.1rem;
+  }
+
+  .person-summary p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tree-view {
+    padding: 12px;
+  }
+
+  .tree-view h1 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+
+  .tree-container {
+    gap: 12px;
+  }
+
+  .selected-person-info {
+    padding: 10px;
+    margin-bottom: 80px; /* More space for mobile navigation controls */
+  }
+
+  .loading, .error {
+    padding: 30px 20px;
+    font-size: 1rem;
+  }
+
+  .empty-state {
+    padding: 40px 16px;
+  }
+
+  .empty-state h2 {
+    font-size: 1.4rem;
+  }
+
+  .empty-state p {
+    font-size: 1rem;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .tree-view {
+    padding: 12px;
+  }
+
+  .tree-view h1 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .selected-person-info {
+    margin-bottom: 70px;
+  }
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .tree-view h1 {
+    font-weight: 500;
+  }
+}

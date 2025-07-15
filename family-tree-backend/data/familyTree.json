@@ -1,0 +1,22 @@
+{
+  "id": "tree-1752616100956",
+  "name": "John Doe's Family Tree",
+  "rootPersonIds": [
+    "64b4c8ad-005c-445c-a874-8e2583b592a4"
+  ],
+  "persons": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@example.com",
+      "parentIds": [],
+      "id": "64b4c8ad-005c-445c-a874-8e2583b592a4",
+      "fullName": "John Doe",
+      "childrenIds": [],
+      "createdAt": "2025-07-15T21:48:20.956Z",
+      "updatedAt": "2025-07-15T21:48:20.956Z"
+    }
+  ],
+  "createdAt": "2025-07-15T21:48:20.956Z",
+  "updatedAt": "2025-07-15T21:48:20.956Z"
+}

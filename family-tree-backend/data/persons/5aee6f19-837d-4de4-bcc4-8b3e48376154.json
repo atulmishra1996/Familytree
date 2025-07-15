@@ -1,0 +1,18 @@
+{
+  "firstName": "Atul",
+  "lastName": "Mishra",
+  "email": "atulmishra1996@gmail.com",
+  "dateOfBirth": "1996-01-22T00:00:00.000Z",
+  "placeOfBirth": "Satna",
+  "phoneNumber": "9592029280",
+  "parentIds": [],
+  "notes": "Hi !! My Name is Atul Mishra",
+  "id": "5aee6f19-837d-4de4-bcc4-8b3e48376154",
+  "fullName": "Atul Mishra",
+  "childrenIds": [
+    "b12325d4-2c3e-4c70-af72-2f1a9f165c71",
+    "55e12da6-5c2a-4a4c-a412-4be7b28e9e43"
+  ],
+  "createdAt": "2025-07-15T21:45:43.363Z",
+  "updatedAt": "2025-07-15T21:57:46.841Z"
+}

@@ -1,0 +1,15 @@
+{
+  "firstName": "Tanu",
+  "lastName": "Mishra",
+  "email": "atulmishra1996@gmail.com",
+  "dateOfBirth": "1999-01-30T00:00:00.000Z",
+  "placeOfBirth": "Satna",
+  "phoneNumber": "9592029280",
+  "parentIds": [],
+  "notes": "Hi !! My Name is Tanu Mishra",
+  "id": "9c84d98f-6f25-4fb2-826b-8c07ecdab09f",
+  "fullName": "Tanu Mishra",
+  "childrenIds": [],
+  "createdAt": "2025-07-15T21:46:17.281Z",
+  "updatedAt": "2025-07-15T21:46:17.281Z"
+}

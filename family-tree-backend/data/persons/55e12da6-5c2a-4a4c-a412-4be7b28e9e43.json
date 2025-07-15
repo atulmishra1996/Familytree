@@ -1,0 +1,17 @@
+{
+  "firstName": "XYZ",
+  "lastName": "Mishra",
+  "email": "atulmishra1996@gmail.com",
+  "dateOfBirth": "2025-04-18T00:00:00.000Z",
+  "placeOfBirth": "Satna",
+  "phoneNumber": "9592029280",
+  "parentIds": [
+    "5aee6f19-837d-4de4-bcc4-8b3e48376154"
+  ],
+  "notes": "Hi !! \n\nMy Name is XYZ",
+  "id": "55e12da6-5c2a-4a4c-a412-4be7b28e9e43",
+  "fullName": "XYZ Mishra",
+  "childrenIds": [],
+  "createdAt": "2025-07-15T21:57:46.840Z",
+  "updatedAt": "2025-07-15T21:57:46.840Z"
+}
